@@ -4,6 +4,9 @@ import java.io.Serializable;
 
 import com.lucasantos.workshopmongo.domain.User;
 
+
+//Projeção dos dados do autor com DTO
+
 public class AuthorDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 

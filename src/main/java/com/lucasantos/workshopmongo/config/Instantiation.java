@@ -44,5 +44,7 @@ public class Instantiation implements CommandLineRunner {
         
         postRepository.saveAll(Arrays.asList(post1, post2));
 
+        maria.getPosts().addAll(Arrays.asList(post1,post2));// aqui eu falo que maria tem post 1 e 2(isso no meu documento usuario(vem a relação))
+        userRepository.save(maria); // aqui eu salvo a maria de novo
     }
 }
