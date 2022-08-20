@@ -1,5 +1,6 @@
 package com.lucasantos.workshopmongo.services;
 
+import java.util.List;
 // import java.util.Optional;
 import java.util.Optional;
 
@@ -24,5 +25,7 @@ public class PostService {
         return user;
     }
 
-    
+    public List<Post> findByTitle(String text){
+        return repo.findByTitleContainingIgnoreCase(text);
+    }
 }
